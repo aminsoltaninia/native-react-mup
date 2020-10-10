@@ -1,7 +1,7 @@
 export const Leaders = [
     {
         id : '0',
-        name : 'amin',
+        name : 'amin leaders F',
         image: 'assets/images/closeup-artificial-colorful-flower-transparent-glass-bottle-wood-chair-garden-view-background-139300686.jpg',
         description : 'Search for the keywords to learn more about each warningTo ignore, add  eslint-disable-next-line to the line before',
         

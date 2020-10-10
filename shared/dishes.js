@@ -2,8 +2,8 @@
 export const Dishes =  [
     {
       id: '0',
-      name: 'aaaaa',
-      image: 'assets/images/closeup-artificial-colorful-flower-transparent-glass-bottle-wood-chair-garden-view-background-139300686.jpg',
+      name: 'first futured dish',
+      image: './images/closeup-artificial-colorful-flower-transparent-glass-bottle-wood-chair-garden-view-background-139300686.jpg',
       category: 'mains',
       featured: true,
       label: 'Hot',
@@ -13,7 +13,7 @@ export const Dishes =  [
     {
       id: '1',
       name: 'ghorme',
-      image: 'assets/images/closeup-artificial-colorful-flower-transparent-glass-bottle-wood-chair-garden-view-background-139300686.jpg',
+      image: './images/closeup-artificial-colorful-flower-transparent-glass-bottle-wood-chair-garden-view-background-139300686.jpg',
       category: 'mains',
       featured: false,
       label: 'notHot',
@@ -24,7 +24,7 @@ export const Dishes =  [
     {
       id: '2',
       name: 'cccccc',
-      image: 'assets/images/closeup-artificial-plant-white-flower-purple-pot-blurred-wooden-desk-frosted-glass-wall-textured-background-74014642.jpg',
+      image: './images/closeup-artificial-plant-white-flower-purple-pot-blurred-wooden-desk-frosted-glass-wall-textured-background-74014642.jpg',
       category: 'apetizer',
       featured: true,
       label: 'melo',
@@ -35,7 +35,7 @@ export const Dishes =  [
     {
       id: '3',
       name: 'uth',
-      image: 'assets/images/closeup-color-pen-black-ceramic-desk-tidy-pen-blurred-wooden-desk-frosted-glass-wall-textured-background-wo-75251323.jpg',
+      image: './images/closeup-color-pen-black-ceramic-desk-tidy-pen-blurred-wooden-desk-frosted-glass-wall-textured-background-wo-75251323.jpg',
       category: 'apetizer',
       featured: true,
       label: 'new',
