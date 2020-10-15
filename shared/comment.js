@@ -2,7 +2,7 @@ export const Comments = [
 
     {
         id:0,
-        dishId :0,
+        dishId :'0',
         rating : 4.2,
         comment : '',
         author : 'dsdsd',
@@ -10,7 +10,7 @@ export const Comments = [
     },
     {
         id:1,
-        dishId :0,
+        dishId :'0',
         rating : 4.2,
         comment : '',
         author : 'gggg',
@@ -18,7 +18,7 @@ export const Comments = [
     },
     {
         id:2,
-        dishId :0,
+        dishId :'0',
         rating : 4.2,
         comment : '',
         author : 'aaaaa',
@@ -26,7 +26,7 @@ export const Comments = [
     },
     {
         id:3,
-        dishId :0,
+        dishId :'0',
         rating : 4.2,
         comment : '',
         author : 'sssss',
@@ -34,7 +34,7 @@ export const Comments = [
     },
     {
         id:4,
-        dishId :0,
+        dishId :'0',
         rating : 4.2,
         comment : '',
         author : 'ioi',
@@ -42,7 +42,7 @@ export const Comments = [
     },
     {
         id:5,
-        dishId :1,
+        dishId :'1',
         rating : 4.2,
         comment : '',
         author : 'a',
@@ -50,7 +50,7 @@ export const Comments = [
     },
     {
         id:6,
-        dishId :1,
+        dishId :'1',
         rating : 4.2,
         comment : '',
         author : 'd',
@@ -58,7 +58,7 @@ export const Comments = [
     },
     {
         id:7,
-        dishId :1,
+        dishId :'1',
         rating : 4.2,
         comment : '',
         author : 'f',
@@ -66,7 +66,7 @@ export const Comments = [
     },
     {
         id:8,
-        dishId :1,
+        dishId :'1',
         rating : 4.2,
         comment : '',
         author : '',
@@ -74,7 +74,7 @@ export const Comments = [
     },
     {
         id:9,
-        dishId :1,
+        dishId :'1',
         rating : 4.2,
         comment : '',
         author : 'sds',
@@ -82,47 +82,47 @@ export const Comments = [
     },
     {
         id:10,
-        dishId :2,
-        rating : 4.2,
+        dishId :'2',
+        rating : 4.1,
         comment : '',
         author : '',
         date : ''
     },
     {
         id:11,
-        dishId :2,
-        rating : 4.2,
+        dishId :'2',
+        rating : 4.1,
         comment : '',
         author : 'sd',
         date : ''
     },
     {
         id:12,
-        dishId :2,
-        rating : 4.2,
+        dishId :'2',
+        rating : 4.6,
         comment : '',
         author : 'as',
         date : ''
     },
     {
         id:13,
-        dishId :2,
-        rating : 4.2,
+        dishId :'2',
+        rating : 4.8,
         comment : '',
         author : 'xx',
         date : ''
     },
     {
         id:14,
-        dishId :2,
-        rating : 4.2,
+        dishId :'2',
+        rating : 4.4,
         comment : '',
         author : 'x',
         date : ''
     },
     {
         id:15,
-        dishId :3,
+        dishId :'3',
         rating : 4.2,
         comment : '',
         author : 'ww',
@@ -130,7 +130,7 @@ export const Comments = [
     },
     {
         id:16,
-        dishId :3,
+        dishId :'3',
         rating : 4.2,
         comment : '',
         author : 'ww',
@@ -138,7 +138,7 @@ export const Comments = [
     },
     {
         id:17,
-        dishId :3,
+        dishId :'3',
         rating : 4.2,
         comment : '',
         author : '22',
@@ -146,7 +146,7 @@ export const Comments = [
     },
     {
         id:18,
-        dishId :3,
+        dishId :'3',
         rating : 4.2,
         comment : '',
         author : '',
@@ -154,7 +154,7 @@ export const Comments = [
     },
     {
         id:19,
-        dishId :3,
+        dishId :'3',
         rating : 4.2,
         comment : '',
         author : 'qq',

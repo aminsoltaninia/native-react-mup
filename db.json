@@ -1,0 +1,244 @@
+{
+  "dishes": [
+    {
+      "id": "0",
+      "name": "uthappizzaa",
+      "image": "images/download.jpg",
+      "category": "mains",
+      "featured": true,
+      "label": "Hot",
+      "price": "4.99",
+      "description": "this is first"
+    },
+    {
+      "id": "1",
+      "name": "ghorme",
+      "image": "images/download (1).jpg",
+      "category": "mains",
+      "featured": false,
+      "label": "notHot",
+      "price": "3.05",
+      "description": "this is second"
+    },
+    {
+      "id": "2",
+      "name": "uthappizzaa",
+      "image": "images/download (2).jpg",
+      "category": "apetizer",
+      "featured": true,
+      "label": "melo",
+      "price": "4.09",
+      "description": "this is third"
+    },
+    {
+      "id": "3",
+      "name": "uthappizzaa",
+      "image": "images/download (3).jpg",
+      "category": "apetizer",
+      "featured": true,
+      "label": "new",
+      "price": "4.99",
+      "description": "this is forth"
+    }
+  ],
+  "comments": [
+    {
+      "dishId": 0 ,
+      "id": 0 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 0 ,
+      "id": 1,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 0 ,
+      "id": 2,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 0 ,
+      "id": 3,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 0 ,
+      "id": 4,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId":1 ,
+      "id": 5,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId":1 ,
+      "id":6 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId":1 ,
+      "id": 7,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId":1 ,
+      "id": 8,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 2,
+      "id": 9,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 2,
+      "id":10 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 2,
+      "id": 11,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 2,
+      "id":12 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id": 13,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id":14 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id": 15,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id": 16,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id": 17,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id":18 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    },
+    {
+      "dishId": 3 ,
+      "id":19 ,
+      "rating": 4.2,
+      "comment": "",
+      "author": "",
+      "date": ""
+    }
+  ],
+  "promotions": [
+    {
+      "id": "0",
+      "name": "Weekend Grand Buffet",
+      "image": "images/download (3).jpg",
+      "lable": "New",
+      "price": "19.99",
+      "featured": true,
+      "description": "djdfhdjhfjd"
+    }
+  ],
+  "feedback": {
+    "firstname": "",
+    "lastname": "",
+    "telnumber": "",
+    "email": "",
+    "agree": "boolean",
+    "contacttype": "",
+    "message": ""
+  },
+  "corporates": [
+    {
+      "id": "0",
+      "name": "v",
+      "image": "images/download.jpg",
+      "description": "cv",
+      "featured": true,
+      "jobTitle": "cvc"
+    },
+    {
+      "id": "1",
+      "name": "v",
+      "image": "images/download.jpg",
+      "description": "cv",
+      "featured": true,
+      "jobTitle": "cvc"
+    }
+  ]
+}
