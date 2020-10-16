@@ -6,6 +6,7 @@ import {Comments} from '../shared/comment';
 import {baseUrl} from '../shared/baseUrl';
 import {connect} from 'react-redux';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {postFavorites} from '../redux/ActionCreater'
 
 function RenderDish(props) {
      const dish = props.dish;
@@ -68,16 +69,9 @@ function RenderComments(props){
 }
 
 class  DishDetail extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = { 
-            favorites : []
-        }
-    }
+ 
     markFavorite(dishId){
-        this.setState({
-            favorites : this.state.favorites.concat(dishId)
-        })
+       this.props.postFavorites(dishId)
     }
     static navigationOptions = {
         title : 'Dish details'
@@ -88,7 +82,7 @@ class  DishDetail extends React.Component{
         return(
             <>
                 <RenderDish dish={this.props.dishes.dishes.filter(dish => dish.id === dishId)[0]}
-                            favorite = {this.state.favorites.some(elem => elem===dishId)} 
+                            favorite = {this.props.favorites.some(elem => elem===dishId)} 
                             onPress = {()=>this.markFavorite(dishId)}
                  />
                 <RenderComments comments = {this.props.comments.comments.filter((comment) => comment.dishId === dishId)}/>
@@ -99,11 +93,19 @@ class  DishDetail extends React.Component{
     
 }
 
+const mapDispatchToProps = (dispatch)=>{
+    return{
+        postFavorites : (dishId)=> dispatch(postFavorites(dishId))
+    }
+
+}
+
 const mapStateToProps = (state)=>{
     return{
         dishes : state.dishes,
-        comments : state.comments
+        comments : state.comments,
+        favorites : state.favorites
     }
 }
 
-export default connect(mapStateToProps)(DishDetail) 
+export default connect(mapStateToProps,mapDispatchToProps)(DishDetail) 

@@ -142,14 +142,34 @@ export const leadersFailed = (errmess)=> ({
 
   
 // }
-export const addPromotions = promotions=> ({
-    type : ActionTypes.ADD_DISHES,
-    payload : promotions
-})
+
+// loading without data and server(cloud) 
+export const addPromotions = promotions=>(dispatch)=> {
+    dispatch(promotionsLoading())
+    return{
+        type : ActionTypes.ADD_PROMOTIONS,
+        payload : promotions
+    }
+    
+}
 export const promotionsLoading = ()=> ({
     type : ActionTypes.PROMOTIONS_LOADING
 })
 export const promotionsFailed = (errmess)=> ({
     type : ActionTypes.PROMOTIONS_FAILED,
     payload : errmess
+})
+
+
+// cerateor for Favorite
+
+export const postFavorites = (dishId) => (dispatch)=>{
+    setTimeout(()=>{
+        dispatch(addFavorite(dishId))
+    }, 2000);
+}
+
+export const addFavorite = (dishId)=>({
+    type: ActionTypes.ADD_FAVORITE,
+    payload : dishId
 })

@@ -1,6 +1,7 @@
 import React from 'react';
 import Menu from './MenuComponent';
 import DishDetail from './DishDeatailComponent';
+import Reservation from  './ReservationComponent';
 import Home from './HomeComponent';
 import About from './AboutUs';
 import Contact from './ContactUs';
@@ -63,6 +64,30 @@ const HomeNavigator = () => {
         options={({ navigation }) => ({
 
           headerLeft: () => <Icon name={Platform.OS === 'android' ? 'md-menu' : 'ios-menu'}
+            size={24} color='white'
+            onPress={() => navigation.toggleDrawer()}
+          />
+          ,
+          headerStyle: {
+            backgroundColor: '#512DAB'
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            color: '#fff'
+          }
+
+        })
+        } />
+    </Navigator>
+  );
+}
+const ReservationNavigator = () => {
+  return (
+    <Navigator  >
+      <Screen name="Reservation" component={Reservation}
+        options={({ navigation }) => ({
+
+          headerLeft: () => <Icon name={Platform.OS === 'android' ? 'md-book' : 'ios-book'}
             size={24} color='white'
             onPress={() => navigation.toggleDrawer()}
           />
@@ -191,6 +216,21 @@ const MainNavigator = () => {
             )
           }
         }} />
+      <Drawer.Screen name="Reservation" component={ReservationNavigator}
+        options={{
+          title: 'Reservation',
+          drawerLabel: 'Reservation',
+          drawerIcon: ({ tintColor }) => {
+            return (
+              <Icon
+                name={Platform.OS === 'android' ? 'md-book' : 'ios-book'}
+                type='font-awesome'
+                size={24}
+                color={tintColor}
+              />
+            )
+          }
+        }} />
       <Drawer.Screen name="AboutUs" component={AboutNavigator}
         options={{
           title: 'AboutUs',
@@ -296,5 +336,8 @@ const mapDispatchToProps = dispatch =>({
     addComments : (comments)=>dispatch(addComments(comments))
 })
 
+const mapStateToProps = (state)=> {
+  return{}
+}
 
-export default connect(null,mapDispatchToProps)(Main) ;
+export default connect(mapStateToProps,mapDispatchToProps)(Main) ;

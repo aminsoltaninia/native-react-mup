@@ -3,6 +3,7 @@ import {  Text ,FlatList } from 'react-native';
 import { Card, ListItem} from 'react-native-elements';
 import {connect} from 'react-redux';
 import {baseUrl} from '../shared/baseUrl';
+import { Loading } from './LoadingComponent';
 
 
 function History(){
@@ -46,18 +47,43 @@ class About extends React.Component{
                     
                 )
             }
-            return(
-                <>
-                    <History/>
-                    <Card title='Corporate leaders'>
-                          <FlatList
-                             data = {this.props.leaders.leaders}
-                             renderItem={renderLeader}
-                             keyExtractor={item=>item.id.toString()}
-                          />   
-                    </Card>
-                </>
-            )
+            if(this.props.leaders.isLoading){
+                return(
+                    <>
+                       <History/>
+                       <Card
+                          title="Corporate Learedship"
+                       >
+                           <Loading/>
+                       </Card>
+                    </>
+                )
+            }else if(this.props.leaders.errMess){
+                return(
+                    <>
+                       <History/>
+                       <Card
+                          title="Corporate Learedship"
+                       >
+                          <Text>{this.props.leaders.errMess}</Text>
+                       </Card>
+                    </>
+                )
+            }else{
+                return(
+                    <>
+                        <History/>
+                        <Card title='Corporate leaders'>
+                              <FlatList
+                                 data = {this.props.leaders.leaders}
+                                 renderItem={renderLeader}
+                                 keyExtractor={item=>item.id.toString()}
+                              />   
+                        </Card>
+                    </>
+                )
+            }
+         
         }
 
 }
